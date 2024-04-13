@@ -1,0 +1,16 @@
+""" write program to take a input(number) from the user  and print the multiplication table (up to 10) of that number.
+for example user input = 9 then you need to print
+1*9=9
+2*9=18
+--
+so on till
+10*9=90 """
+
+
+i=0
+user_input=int(input("Enter the num:"))
+print("Multiplication of 9")
+while i<10:
+    i+=1
+    
+    print(i*user_input)
