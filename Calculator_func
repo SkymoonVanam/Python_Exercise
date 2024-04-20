@@ -1,0 +1,58 @@
+def add(x,y):
+    sum= x+y
+    print("The addition of given numbers: ",sum)
+    return sum
+def subtract(x,y):
+    sub = x-y
+    print("perform the subtract operation :", sub)
+    return sub
+def multiply(x,y):
+    mul = x*y
+    print("perform the subtract operation :", mul)
+    return mul
+def divide(x,y):
+    try:
+        result=x/y
+    except ZeroDivisionError:
+        print("Error: Division by zero!")
+        return None
+    return result
+
+def calculator():
+    """Function to interact with the user and perform calculations"""
+    print("Simple Calculator")
+    while True:
+        print("\n Choose operation")
+        print("1. ADD")
+        print("2. SUB")
+        print("3. Multiply")
+        print("4. Divide")
+        print("5. Exit")
+              
+        choice = input("Enter the choices (1/2/3/4/5): ")
+
+        if choice== '5':
+            print("Existing the calculator, GoodBye!! ")
+            break
+        try:
+            num1= float(input("Enter the num1: "))
+            num2= float(input("Enter the num2: "))
+        except ValueError:
+            print("Invalid Input. Please enter valid numbers")
+            continue 
+        if choice=='1':
+            add=num1+num2
+            return add
+        elif choice=='2':
+            sub=num1-num2
+            return sub
+        elif choice=='3':
+            mul=num1*num2
+            return mul
+        elif choice=='4':
+            div=num1/num2
+            return div
+        else:
+            print("Existing the calculator, GoodBye!! ")
+
+calculator()
