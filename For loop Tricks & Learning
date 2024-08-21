@@ -1,0 +1,73 @@
+
+******Basics** For Loop with List: *******
+
+### for loop with "List"
+fruits=['apple','orange','grapes']
+
+for i in fruits:
+    print(i)
+
+O/p:
+
+apple
+orange
+grapes
+
+
+### for loop with "String" 
+
+for i in "Python":
+    print(i)
+
+O/p:
+
+P
+y
+t
+h
+o
+n
+
+### for loop with "Tuple"
+
+tu= (1,3,4,5,6)
+for i in tu:
+    print(i)
+
+O/p:
+
+1
+3
+4
+5
+6
+
+### for loop with "Dict"
+
+d={'name':'vanam','age':29}
+
+for key in d:
+    print(key,d[key])
+
+O/p:
+
+name vanam
+age 29
+
+### for loop with rows and cols:
+
+for i in range(3): #no.of.rows 'i = 0 to 2'
+    for j in range(2): #no.of cols 'j = 0 to 1'
+        print(f"i={i},j={j}")
+
+
+O/p:
+
+i=0,j=0
+i=0,j=1
+i=1,j=0
+i=1,j=1
+i=2,j=0
+i=2,j=1
+
+
