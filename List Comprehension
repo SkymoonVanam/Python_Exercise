@@ -1,0 +1,8 @@
+#1. Find the vowels by using List comprehension?
+
+word="PYTHON"
+Vowels="aeiou"
+
+find_vowela = [char for char in vowels if char in word]
+
+print(find_vowels)
